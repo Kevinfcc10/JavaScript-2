@@ -1,16 +1,22 @@
 console.log('Hola mundo');
 var mutar;
-//Json
+//Objeto Json
 var usuario = {
     nombre: 'Kevin',
     apellido: 'Carate',
-    cedula:'1234567890',
-    edad:'23',
+    cedula: '1234567890',
+    edad: '23',
 };
-
 console.log(usuario.nombre, usuario.apellido);
 console.log(usuario);
-
+//Método
+delete usuario.edad;
+console.log(usuario);
+usuario.fechaNacimiento = new Date();
+console.log(usuario);
+usuario.mascotas = {};
+usuario.mascotas.nombre = 'Shaggi';
+console.log(usuario);
 /*
 var nombre = 'Kevin';
 mutar = nombre;
@@ -32,3 +38,35 @@ if (num1) {
     console.log('falso')
 }
 */
+
+
+var arreglo = [
+    1,
+    'Kevin',
+    true,
+    undefined,
+    null,
+    new Date(),
+    {
+        nombre: "Kevin"
+    },
+    [1, 2, 3, 4]
+];
+console.log(arreglo);
+
+function SumarNumeros(numeroUno, numeroDos) {
+    return numeroUno + numeroDos;
+}
+
+console.log(SumarNumeros(1, 2));
+console.log(SumarNumeros(1, 2.324));
+
+var potenciaDeDosDeUnNumero = function noEsNecesarioPonerElNombre(numero) {
+    return numero*numero;
+};
+
+potenciaDeDosDeUnNumero = function (numero) {
+    return numero*numero;
+};
+console.log(potenciaDeDosDeUnNumero(1, 2, 3));
+console.log(potenciaDeDosDeUnNumero(4));
