@@ -23,3 +23,39 @@ class Usuario{
 
 let kevin: Usuario = new Usuario('Kevin',false,23);
 console.log(kevin);
+
+
+class UsuarioDos {
+    constructor(public nombre:string,
+                private _casado: boolean,
+                protected _edad: number){
+    }
+    get casado(){
+        return this._casado;
+    }
+    set casado(casado: boolean) {
+        this._casado = casado;
+    }
+    imprimirUsuario(saludo: string) : string {
+        //Template String
+        return `${saludo}. Mi nombre es ${this.nombre}. estoy casado ${this.casado}, mi edad es ${this._edad}`;
+    }
+}
+
+let kevinDos = new UsuarioDos('Fabricio', false, 23);
+console.log(kevinDos);
+console.log(kevinDos.imprimirUsuario('Hola soy goku'));
+
+let carla: UsuarioTres = {
+    nombre: 'Kevin',
+    //casado: false,
+    edad: 28
+};
+//interface sirve para implementar una clase y para tipar un dato.
+interface UsuarioTres {
+    nombre: string;
+    casado?: boolean;
+    edad: number;
+}
+
+console.log(carla);

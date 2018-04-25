@@ -35,8 +35,8 @@
       <file leaf-file-name="class.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/02 TypeScript/class.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="888">
-              <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+            <state relative-caret-position="479">
+              <caret line="56" column="11" lean-forward="true" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -61,6 +61,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -123,7 +124,7 @@
     <property name="node.js.selected.package.prettier" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RunDashboard">
@@ -150,12 +151,12 @@
       <updated>1524070943943</updated>
       <workItem from="1524070945127" duration="3476000" />
       <workItem from="1524074872207" duration="12000" />
-      <workItem from="1524672360246" duration="2558000" />
+      <workItem from="1524672360246" duration="3993000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6046000" />
+    <option name="totallyTimeSpent" value="7481000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="491" y="68" width="1759" height="1236" extended-state="0" />
@@ -270,8 +271,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/02 TypeScript/class.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="888">
-          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+        <state relative-caret-position="479">
+          <caret line="56" column="11" lean-forward="true" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
         </state>
       </provider>
     </entry>
