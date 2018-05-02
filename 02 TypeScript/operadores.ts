@@ -53,7 +53,7 @@ let arregloUsuarios: UsuarioArreglo[] = [
     },
     {
         nombre:'Manuel',
-        edad:18
+        edad:17
     },
     {
         nombre:'Daniela',
@@ -77,14 +77,45 @@ interface UsuarioArreglo {
     nombre:string;
     edad:number;
     deuda?: number;
+    becario?: boolean;
 }
 
 //Operador map devuelve el arreglo transformado o mutado, parecido al for each
-let nuevoArregloDeUsuarios = arregloUsuarios.map(
+let nuevoArregloDeUsuarios = arregloUsuarios
+    .map(
     (usuario: UsuarioArreglo) => {
-        usuario.deuda = 0;
+        usuario.becario = false;
         return usuario;
-}
+        }
+    )
+    .map(
+        (usuario: UsuarioArreglo) => {
+            usuario.deuda = calcularDeuda(usuario.edad);
+            return usuario;
+        }
+    )
+    .filter(
+        (usuario:UsuarioArreglo) => {
+            return usuario.deuda < 24
+        }
+    )
+    
+    .some(
+    (usuario:UsuarioArreglo) => {
+        return usuario.edad < 18 //true , false
+    }
+    /*
+    .every(
+        (usuario:UsuarioArreglo) => {
+            return usuario.edad < 18 //true , false
+        }*/
 );
 
+
+function calcularDeuda(edadUsuario:number){
+    const  totalEdad = arregloUsuarios.reduce((total,usuario: UsuarioArreglo) => total + usuario.edad,0);
+    return totalEdad * (edadUsuario/100);
+}
+
 console.log(nuevoArregloDeUsuarios);
+

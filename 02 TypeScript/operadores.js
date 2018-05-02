@@ -38,7 +38,7 @@ var arregloUsuarios = [
     },
     {
         nombre: 'Manuel',
-        edad: 18
+        edad: 17
     },
     {
         nombre: 'Daniela',
@@ -54,8 +54,29 @@ var resultadoEdadUsuarios = arregloUsuarios.reduce(function (acumuladoEdad, usua
 }, 0);
 console.log(resultadoEdadUsuarios);
 //Operador map devuelve el arreglo transformado o mutado, parecido al for each
-var nuevoArregloDeUsuarios = arregloUsuarios.map(function (usuario) {
-    usuario.deuda = 0;
+var nuevoArregloDeUsuarios = arregloUsuarios
+    .map(function (usuario) {
+    usuario.becario = false;
     return usuario;
-});
+})
+    .map(function (usuario) {
+    usuario.deuda = calcularDeuda(usuario.edad);
+    return usuario;
+})
+    .filter(function (usuario) {
+    return usuario.deuda < 24;
+})
+    .some(function (usuario) {
+    return usuario.edad < 18; //true , false
+}
+/*
+.every(
+    (usuario:UsuarioArreglo) => {
+        return usuario.edad < 18 //true , false
+    }*/
+);
+function calcularDeuda(edadUsuario) {
+    var totalEdad = arregloUsuarios.reduce(function (total, usuario) { return total + usuario.edad; }, 0);
+    return totalEdad * (edadUsuario / 100);
+}
 console.log(nuevoArregloDeUsuarios);

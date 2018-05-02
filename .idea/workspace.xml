@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fb3304e-a1af-468a-bb8f-ef39adef18c2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/02 TypeScript/operadores.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02 TypeScript/operadores.js" beforeDir="false" afterPath="$PROJECT_DIR$/02 TypeScript/operadores.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02 TypeScript/operadores.ts" beforeDir="false" afterPath="$PROJECT_DIR$/02 TypeScript/operadores.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -47,8 +48,8 @@
       <file leaf-file-name="operadores.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/02 TypeScript/operadores.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="84" column="25" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
+            <state relative-caret-position="-1521">
+              <caret line="55" column="15" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -170,12 +171,12 @@
       <workItem from="1524070945127" duration="3476000" />
       <workItem from="1524074872207" duration="12000" />
       <workItem from="1524672360246" duration="4183000" />
-      <workItem from="1525277114841" duration="3367000" />
+      <workItem from="1525277114841" duration="4936000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11038000" />
+    <option name="totallyTimeSpent" value="12607000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="233" y="62" width="1759" height="1236" extended-state="0" />
@@ -328,8 +329,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/02 TypeScript/operadores.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="84" column="25" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
+        <state relative-caret-position="-1521">
+          <caret line="55" column="15" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="15" />
         </state>
       </provider>
     </entry>
